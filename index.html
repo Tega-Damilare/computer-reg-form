@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>computer reg site</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <form >
+        <header>
+            <legend>
+                <h1>Register computer below</h1>
+            </legend>
+        </header>   
+        <label for="makes">Pick the laptop make</label>
+        <select name="makes" id="makes">
+            <option value="hp">HP</option>
+            <option value="dell">Dell</option>
+            <option value="zinox">Zinox</option>
+            <option value="apple">Apple</option>
+            <option value="grape">Grape</option>
+            <option value="micro">Microsoft</option>
+        </select> 
+        <br> 
+        <label for="size">size</label>
+        <input type="number" name="size" id="size">
+        <br>
+        <label for="model">model</label>
+        <input type="number" name="model" id="model">
+        <br>
+        <label for="color">Colour</label>
+        <input type="text" name="color" id="color">
+        <br>
+        <label for="chargerSize">Charger size</label>
+        <input type="number" name="chargerSize" id="chargerSize">
+        <br>
+        <label for="screenSize">Screen size</label>
+        <input type="number" name="screenSize" id="screenSize">
+        <br>
+        <button id="submit">Submit</button>
+        <fieldset>
+            <label for="search">Search laptop here</label>
+            <input type="search" name="search" id="search">
+        </fieldset>
+    </form>
+<h1 id="searchDisp"></h1>
+</body>
+<script src="script.js"></script>
+</html>
