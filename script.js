@@ -7,10 +7,13 @@
 // Loop through the local storage ==
 // Create a new varible named laptopz ==
 // Get the items from local storage and stores them in laptopsArray ==
-// Map through laptopsArray an save the items inside laptopsArray as x
-// Filter through x 
-// Compare the laptop make with the search value
-// If the search value is equal to the search value display info about the company
+// Map through laptopsArray an save the items inside laptopsArray as array ==
+
+// Filter through  array and check and save the items as laptope 
+// Compare the laptope.company with the search value
+// If the search value is equal to the laptope.company 
+// return laptope
+// console.log  array
 
 
 // Grabing the  of elements in the form;
@@ -102,13 +105,30 @@ search.addEventListener("keydown",(ev)=>{
     console.log(i)
     console.log(laptopsArray)
     
-    laptopmap =  laptopsArray.map((array) =>{
+   let filteredLaptops =  laptopsArray.filter((array) =>{
       if(array.company === searchVal){
-        return array
+        return array;
       }
+      if (array.size === searchVal) {
+        return array;
+      }
+
+    if (array.screen === searchVal) {
+      return array;
+    }
+    if (array.charger === searchVal) {
+      return array;
+    }
+
+    if (`${array.company},${array.color}` === searchVal) {
+      return array;
+    }
+    if (`${array.company},${array.model}` === searchVal) {
+      return array;
+    }
       
-    }  ) 
-    console.log(laptopmap)
+    }) 
+    console.log(filteredLaptops)
     // }
     
     
